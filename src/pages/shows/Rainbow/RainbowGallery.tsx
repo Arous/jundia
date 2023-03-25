@@ -12,7 +12,8 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import photos from "@/assets/data/circusPhotos";
+import photos from "@/pages/shows/Rainbow/useRainbowPhoto";
+
 
 const slides = photos.map(({ src, width, height, images }) => ({
     src,
@@ -25,8 +26,10 @@ const slides = photos.map(({ src, width, height, images }) => ({
     })),
 }));
 
-export default function CircusGallery() {
+
+export default function Gallery() {
     const [index, setIndex] = useState(-1);
+    console.log(photos);
 
     return (
         <>

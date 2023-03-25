@@ -17,29 +17,41 @@ import "bootstrap/dist/js/bootstrap.min.js";
 //import gird from './@material-ui/core/gird'
 
 import About from "@/pages/About";
-import Show from "@/pages/Show";
+import Shows from "@/pages/Shows";
 import Photo from "@/pages/Photo";
 
-import CircusOlympic from "@/pages/shows/CircusOlympic";
+import CircusOlympic from "@/pages/shows/CircusOlympic/CircusOlympic";
+import Butterfly from "@/pages/shows/Butterfly/Butterfly";
+import Wave from "@/pages/shows/Wave/Wave";
+import Rainbow from "@/pages/shows/Rainbow/Rainbow";
+import CircusClassic from "@/pages/shows/CircusClassic/CircusClassic";
+import Show from "@/components/Show/Show";
 
-export function App() {
+export function MainRoutes () {
   return (
     <div className="container-fuild">
       <div className="container-fuild">
         {/* <Header /> */}
         <Routes>
-          <Route path="/About" element={<About />} />
+          <Route path="/" element={<About />} />
+          <Route path="/about" element={<About />} />
 
-          <Route path="/Show" element={<Show />} />
-          {/* <Route path="/detail/:id" element={<CircusOlympic />} /> */}
+          <Route path="shows" element={<Shows />}>
+            {/* <Route path="butterfly" element={<Show />} /> */}
+          </Route>
+          <Route path="/shows/circus_olympics" element={<CircusOlympic />} />
+          <Route path="/shows/butterfly" element={<Butterfly />} />
+          <Route path="/shows/dwave" element={<Wave />} />
+          <Route path="/shows/rainbow_show" element={<Rainbow />} />
+          <Route path="/shows/circus_classic" element={<CircusClassic />} />
 
-          <Route path="/Photo" element={<Photo />} />
+          <Route path="/photo" element={<Photo />} />
 
-          <Route path="/test" element={<CircusOlympic />} />
+          {/* <Route path="/test" element={<CircusOlympic />} /> */}
         </Routes>
       </div>
     </div>
   );
 }
 
-export default App;
+export default MainRoutes ;

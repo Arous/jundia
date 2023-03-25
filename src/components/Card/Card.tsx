@@ -4,7 +4,7 @@ import { Card as MuiCard, CardContent, CardHeader, Chip, Typography } from "@mui
 import { useNavigate } from "react-router-dom";
 
 interface CardProps {
-  id: number;
+  id: string;
   image: string;
   title: string;
   content: string;
@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({id, image, title, content, hashtags }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/show/${id}`);
+    navigate(`/shows/${id}`);
   };
 
   return (

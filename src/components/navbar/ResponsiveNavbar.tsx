@@ -60,7 +60,7 @@ function Nav() {
                   </a>
 
                   <a
-                    href="/show"
+                    href="/shows"
                     // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
@@ -196,7 +196,7 @@ function Nav() {
                 </a>
 
                 <a
-                  href="/show"
+                  href="/shows"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   SHOW

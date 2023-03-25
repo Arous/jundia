@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 
 // import { FaCommentAlt, FaThumbsUp, FaRegEye } from 'react-icons/fa'
 import Card from '@/components/Card/Card';
-import TailwindCard from "@/components/Card/TailwindCard";
-import About from "./About";
-// import DetailPage from "./components/DetailPage";
 
-const App: React.FC = () => {
+
+const Shows: React.FC = () => {
   const cards = [
     {
-      id: 1,
+      id: "circus_olympics",
       image: "/src/assets/images/Circus/Show_Olympic/1.jpg",
       title: "서커스올림픽 ",
       content: "CIRCUS OLYMPICS",
@@ -18,7 +16,7 @@ const App: React.FC = () => {
     },
 
     {
-      id: 2,
+      id: "butterfly",
       image: "/src/assets/images/Circus/Show_Butterfly/4.jpg",
       title: "날갯짓 ",
       content: "THE FLUTTER OF WINGS",
@@ -26,7 +24,7 @@ const App: React.FC = () => {
     },
 
     {
-      id: 3,
+      id: "rainbow_show",
       image: "/src/assets/images/Circus/Show_Rainbow/6.jpg",
       title: "레인보우쇼 ",
       content: "RAINBOW SHOW",
@@ -34,7 +32,7 @@ const App: React.FC = () => {
     },
 
     {
-      id: 4,
+      id: "circus_classic",
       image: "/src/assets/images/Circus/Show_Classic/3.jpg",
       title: "서커스 클래식",
       content: "CIRCUS CLASSIC",
@@ -42,7 +40,7 @@ const App: React.FC = () => {
     },
 
     {
-      id: 5,
+      id: "dwave",
       image: "/src/assets/images/Circus/Show_Wave/1.jpg",
       title: "디 웨이브",
       content: "D.WAVE",
@@ -52,20 +50,25 @@ const App: React.FC = () => {
   ];
 
   return (
-    <div className="flex flex-wrap gap-4 justify-center">
-      {cards.map((card) => (
-        // <Card
-        <Card
-          key={card.id}
-          id={card.id}
-          image={card.image}
-          title={card.title}
-          content={card.content}
-          hashtags={card.hashtags}
-        />
-      ))}
-    </div>
+    <>
+      <div className="mt-10 flex flex-wrap gap-4 justify-center">
+        {cards.map((card) => (
+          // <Card
+          <Card
+            key={card.id}
+            id={card.id}
+            image={card.image}
+            title={card.title}
+            content={card.content}
+            hashtags={card.hashtags}
+          />
+        ))}
+      </div>
+
+      <Outlet />
+
+    </>
   );
 };
 
-export default App;
+export default Shows;

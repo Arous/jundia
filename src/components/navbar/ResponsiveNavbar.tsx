@@ -15,9 +15,11 @@ import YoutubeIcon from "../icons/Youtube";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const toggleIsOpen = () => setIsOpen(!isOpen);
   // const { theme, toggleTheme } = useDarkMode();
   const [ theme, toggleTheme ] = useDarkSide();
 
+  console.log(isOpen);
 
   return (
     <div>
@@ -190,6 +192,7 @@ function Nav() {
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <Link
+                  onClick={() => setIsOpen(false)}
                   to="/about"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
@@ -197,6 +200,7 @@ function Nav() {
                 </Link>
 
                 <Link
+                  onClick={() => setIsOpen(false)}
                   to="/shows"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
@@ -204,6 +208,7 @@ function Nav() {
                 </Link>
 
                 <Link
+                  onClick={() => setIsOpen(false)}
                   to="/photo"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
@@ -211,6 +216,7 @@ function Nav() {
                 </Link>
 
                 <Link
+                  onClick={() => setIsOpen(false)}
                   to="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
@@ -218,6 +224,7 @@ function Nav() {
                 </Link>
 
                 <Link
+                  onClick={() => setIsOpen(false)}
                   to="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >

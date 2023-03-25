@@ -1,13 +1,20 @@
 import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
+import useDarkMode from "@/features/darkmode/useDarkMode";
+// import ToggleDarkButton from "@/features/darkmode/ToggleDarkButton";
+import DarkLightButton from "@/features/darkmode/DarkLightButton";
 import MainRoutes from "@/routes/MainRoutes";
 import InstagramIcon from "../icons/Instagram";
 import TikTokIcon from "../icons/TikTok";
 import YoutubeIcon from "../icons/Youtube";
 
+
+
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+  const { theme, toggleTheme } = useDarkMode();
+
   return (
     <div>
       <nav className="bg-gray-800">
@@ -85,6 +92,11 @@ function Nav() {
                       {/* TIKTOK */}
                       <TikTokIcon />
                     </a>
+
+                  </div>
+
+                  <div className="flex flex-col items-center trainsition duration-200 ">
+                    <DarkLightButton />
                   </div>
 
 
@@ -209,6 +221,11 @@ function Nav() {
                     {/* TIKTOK */}
                     <TikTokIcon />
                   </a>
+
+                  <div className="flex flex-col items-center trainsition duration-200 px-3 py-1 ">
+                    <DarkLightButton />
+                  </div>
+
                 </div>
 
               </div>

@@ -29,7 +29,6 @@ const slides = photos.map(({ src, width, height, images }) => ({
 
 export default function Gallery() {
     const [index, setIndex] = useState(-1);
-    console.log(photos);
 
     return (
         <>

@@ -30,9 +30,9 @@ const Butterfly = () => {
 
             <br/>
 
-            <p>
+            <blockquote>
               나비를 닮은 디아볼로의 날갯짓이 그대의 마음을 훔친다.
-            </p>
+            </blockquote>
             <br />
 
             <br />
@@ -47,7 +47,7 @@ const Butterfly = () => {
       </div>
 
       <div className='flex justify-center mt-10 w-full h-96'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/O04ImFPQqH8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O04ImFPQqH8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
       </div>
 
       <div className='mt-10' >

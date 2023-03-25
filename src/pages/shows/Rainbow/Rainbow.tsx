@@ -46,7 +46,7 @@ const Rainbow = () => {
       </div>
 
       <div className='flex justify-center mt-10 w-full h-96'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/keHkiIXslnQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/keHkiIXslnQ" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
       </div>
 
       <div className='mt-10' >

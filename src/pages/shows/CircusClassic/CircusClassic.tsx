@@ -23,9 +23,9 @@ const CircusClassic = () => {
             <span className='text-4xl'>
               서커스 클래식 CIRCUS CLASSIC
             </span>
-            <span className="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
+            {/* <span className="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
               25 min
-            </span>
+            </span> */}
 
             <br/>
 
@@ -46,7 +46,7 @@ const CircusClassic = () => {
       </div>
 
       <div className='flex justify-center mt-10 w-full h-96'>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xy1yUMjdClU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xy1yUMjdClU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
       </div>
 
       <div className='mt-10' >

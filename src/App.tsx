@@ -6,6 +6,7 @@ import ResponsiveNavbar from '@/components/navbar/ResponsiveNavbar';
 
 
 const App: React.FC = () => {
+
   return (
     <AppProvider>
       <ResponsiveNavbar />

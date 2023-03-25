@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 
 import useDarkMode from "@/features/darkmode/useDarkMode";
+import useDarkSide from "@/features/darkmode/useDarkSide";
 // import ToggleDarkButton from "@/features/darkmode/ToggleDarkButton";
 import DarkLightButton from "@/features/darkmode/DarkLightButton";
 import MainRoutes from "@/routes/MainRoutes";
@@ -13,64 +14,87 @@ import YoutubeIcon from "../icons/Youtube";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, toggleTheme } = useDarkMode();
+  // const { theme, toggleTheme } = useDarkMode();
+  const [ theme, toggleTheme ] = useDarkSide();
+
 
   return (
     <div>
-      <nav className="bg-gray-800">
+      <nav
+        className="
+          bg-slate-400 
+          dark:bg-slate-700 
+          fixed top-0 w-full z-50
+          bg-opacity-70
+        ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <div className="flex-shrink-0">
-                <div className="text-white">
+                {/* <div className="text-white">
                   🎪 Jundia Circus
-                </div>
-                {/* <img
-                  className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                </div> */}
+
+                <img
+                  className="h-12 w-12"
+                  src="/src/assets/images/logo/jundia_logo_white.png"
                   alt="Workflow"
-                /> */}
+                />
+
+                {/* { theme === 'light' &&
+                <img
+                  className="h-12 w-12"
+                  src="/src/assets/images/logo/jundia_logo_black.png"
+                  alt="Workflow"
+                />
+                } */}
+
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     href="/about"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     ABOUT
                   </a>
 
                   <a
                     href="/show"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     SHOW
                   </a>
 
                   <a
                     href="/photo"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     PHOTO
                   </a>
 
                   <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    href="/test"
+                    // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Calendar
                   </a>
 
                   <a
                     href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Reports
                   </a>
 
                   <div className="flex">
                     <a
-                      className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      className="flex hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                       href="https://instagram.com/jundia_cirque?igshid=YmMyMTA2M2Y="
                     >
                       {/* INSTAGRAM */}
@@ -78,7 +102,8 @@ function Nav() {
                     </a>
 
                     <a
-                      className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                       href="https://www.youtube.com/channel/UCbsPiJ-PH1jvLdvlZwuqicw"
                     >
                       {/* YOUTUBE */}
@@ -86,7 +111,8 @@ function Nav() {
                     </a>
 
                     <a
-                      className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                       href="www.tiktok.com/@jundia_cirque"
                     >
                       {/* TIKTOK */}

@@ -20,6 +20,8 @@ import About from "@/pages/About";
 import Show from "@/pages/Show";
 import Photo from "@/pages/Photo";
 
+import CircusOlympic from "@/pages/shows/CircusOlympic";
+
 export function App() {
   return (
     <div className="container-fuild">
@@ -27,8 +29,13 @@ export function App() {
         {/* <Header /> */}
         <Routes>
           <Route path="/About" element={<About />} />
+
           <Route path="/Show" element={<Show />} />
+          {/* <Route path="/detail/:id" element={<CircusOlympic />} /> */}
+
           <Route path="/Photo" element={<Photo />} />
+
+          <Route path="/test" element={<CircusOlympic />} />
         </Routes>
       </div>
     </div>

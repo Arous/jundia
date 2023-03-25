@@ -3,3 +3,11 @@
   text-align: center;
 }
 
+
+.dark {
+  background-color: 'gray'
+}
+
+.light {
+  background-color: 'white';
+}

@@ -4,12 +4,12 @@ import React from 'react'
 const Biography = () => {
   return (
     <div>
-      <section className="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
+      <section className="px-4 py-6 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
         <div className="grid gap-3 row-gap-10 ">
           <div className="md:py-2 md:pr-2 text-gray-700 dark:text-gray-400">
             <div className="flex justify-center items-center">
               <div className="w-1/2 mr-5">
-                <p className="text-right font-bold text-xl text-gray-900 dark:text-slate-600">
+                {/* <p className="text-right font-bold text-xl text-gray-900 dark:text-slate-600">
                   Age
                 </p>
               </div>
@@ -29,21 +29,21 @@ const Biography = () => {
               <div className="w-1/2 pt-2 pb-2">
                 <p>
                   1989.10.07
-                </p>
+                </p> */}
               </div>
             </div>
 
             <div className="flex justify-center items-center">
               <div className="w-1/2 mr-5">
-                <p className="text-right font-bold text-xl text-gray-900 dark:text-slate-600">
-                  Height / Weight
-                </p>
+                {/* <p classname="text-right font-bold text-xl text-gray-900 dark:text-slate-600">
+                  height / weight
+                </p> */}
               </div>
-              <div className="w-1/2 pt-2 pb-2">
+              {/* <div className="w-1/2 pt-2 pb-2">
                 <p>
                   175cm / 65kg
                 </p>
-              </div>
+              </div> */}
             </div>
 
             <div className="flex justify-center items-center">

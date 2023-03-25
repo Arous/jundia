@@ -18,6 +18,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 import About from "@/pages/About";
 import Show from "@/pages/Show";
+import Photo from "@/pages/Photo";
 
 export function App() {
   return (
@@ -27,6 +28,7 @@ export function App() {
         <Routes>
           <Route path="/About" element={<About />} />
           <Route path="/Show" element={<Show />} />
+          <Route path="/Photo" element={<Photo />} />
         </Routes>
       </div>
     </div>

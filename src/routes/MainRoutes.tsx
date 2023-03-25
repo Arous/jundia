@@ -34,7 +34,8 @@ export function MainRoutes () {
         {/* <Header /> */}
         <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/about" element={<About />} />
+          <Route path="about" element={<About />} />
+          <Route path="photo" element={<Photo />} />
 
           <Route path="shows" element={<Shows />}>
             {/* <Route path="butterfly" element={<Show />} /> */}
@@ -44,8 +45,6 @@ export function MainRoutes () {
           <Route path="/shows/dwave" element={<Wave />} />
           <Route path="/shows/rainbow_show" element={<Rainbow />} />
           <Route path="/shows/circus_classic" element={<CircusClassic />} />
-
-          <Route path="/photo" element={<Photo />} />
 
           {/* <Route path="/test" element={<CircusOlympic />} /> */}
         </Routes>

@@ -51,6 +51,7 @@ const Shows: React.FC = () => {
 
   return (
     <>
+      <div className="mt-20 text-4xl"> 작품 리스트 </div>
       <div className="mt-10 flex flex-wrap gap-4 justify-center">
         {cards.map((card) => (
           // <Card

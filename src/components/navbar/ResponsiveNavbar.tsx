@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 
 import useDarkMode from "@/features/darkmode/useDarkMode";
@@ -52,72 +53,72 @@ function Nav() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     ABOUT
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/shows"
+                  <Link
+                    to="/shows"
                     // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     SHOW
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/photo"
+                  <Link
+                    to="/photo"
                     // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     PHOTO
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/test"
+                  <Link
+                    to="/test"
                     // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Calendar
-                  </a>
+                  </Link>
 
-                  <a
-                    href="#"
+                  <Link
+                    to="#"
                     // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Reports
-                  </a>
+                  </Link>
 
                   <div className="flex">
-                    <a
+                    <Link
                       // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                       className="flex hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
-                      href="https://instagram.com/jundia_cirque?igshid=YmMyMTA2M2Y="
+                      to="https://instagram.com/jundia_cirque?igshid=YmMyMTA2M2Y="
                     >
                       {/* INSTAGRAM */}
                       <InstagramIcon />
-                    </a>
+                    </Link>
 
-                    <a
+                    <Link
                       // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                       className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
-                      href="https://www.youtube.com/channel/UCbsPiJ-PH1jvLdvlZwuqicw"
+                      to="https://www.youtube.com/channel/UCbsPiJ-PH1jvLdvlZwuqicw"
                     >
                       {/* YOUTUBE */}
                       <YoutubeIcon />
-                    </a>
+                    </Link>
 
-                    <a
+                    <Link
                       // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                       className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
-                      href="www.tiktok.com/@jundia_cirque"
+                      to="www.tiktok.com/@jundia_cirque"
                     >
                       {/* TIKTOK */}
                       <TikTokIcon />
-                    </a>
+                    </Link>
 
                   </div>
 
@@ -188,65 +189,65 @@ function Nav() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <a
-                  href="/about"
+                <Link
+                  to="/about"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   ABOUT
-                </a>
+                </Link>
 
-                <a
-                  href="/shows"
+                <Link
+                  to="/shows"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   SHOW
-                </a>
+                </Link>
 
-                <a
-                  href="/photo"
+                <Link
+                  to="/photo"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   PHOTO
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Calendar
-                </a>
+                </Link>
 
-                <a
-                  href="#"
+                <Link
+                  to="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Reports
-                </a>
+                </Link>
 
                 <div className="flex justify-center mt-3">
-                  <a
+                  <Link
                     className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    href="https://instagram.com/jundia_cirque?igshid=YmMyMTA2M2Y="
+                    to="https://instagram.com/jundia_cirque?igshid=YmMyMTA2M2Y="
                   >
                     {/* INSTAGRAM */}
                     <InstagramIcon />
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    href="https://www.youtube.com/channel/UCbsPiJ-PH1jvLdvlZwuqicw"
+                    to="https://www.youtube.com/channel/UCbsPiJ-PH1jvLdvlZwuqicw"
                   >
                     {/* YOUTUBE */}
                     <YoutubeIcon />
-                  </a>
+                  </Link>
 
-                  <a
+                  <Link
                     className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    href="www.tiktok.com/@jundia_cirque"
+                    to="www.tiktok.com/@jundia_cirque"
                   >
                     {/* TIKTOK */}
                     <TikTokIcon />
-                  </a>
+                  </Link>
 
                   <div className="flex flex-col items-center trainsition duration-200 px-3 py-1 ">
                     <DarkLightButton />

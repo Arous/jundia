@@ -5,7 +5,9 @@ import CircusGallery from '@/features/about/CircusGallery';
 
 const Photo = () => {
   return (
-    <CircusGallery />
+    <div className='mt-20'>
+      <CircusGallery />
+    </div>
   )
 }
 

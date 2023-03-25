@@ -31,7 +31,7 @@ const Butterfly = () => {
             <br/>
 
             <blockquote>
-              나비를 닮은 디아볼로의 날갯짓이 그대의 마음을 훔친다.
+              "나비를 닮은 디아볼로의 날갯짓이 그대의 마음을 훔친다."
             </blockquote>
             <br />
 

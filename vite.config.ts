@@ -15,4 +15,7 @@ export default defineConfig({
     },
     preserveSymlinks: true,
   },
+  build: {
+    target: 'esnext',
+  }
 })

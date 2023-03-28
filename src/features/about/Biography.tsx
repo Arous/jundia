@@ -46,26 +46,26 @@ const Biography = () => {
               </div> */}
             </div>
 
-            <div className="flex justify-center items-center">
-              <div className="w-1/2 mr-5">
-                <p className="text-right font-bold text-xl text-gray-900 dark:text-slate-600">
+            <div className="lg:flex justify-center items-center">
+              <div className="lg:w-1/2 mr-5">
+                <p className="text-middle text-3xl font-bold text-gray-900 dark:text-slate-600">
                   Speciality
                 </p>
               </div>
-              <div className="w-1/2 pt-2 pb-2">
+              <div className="lg:w-1/2 pt-2 pb-2">
                 <p>
                   Circus, Diabolo, Juggling, Magic
                 </p>
               </div>
             </div>
 
-            <div className="flex justify-center items-center">
-              <div className="w-1/2 mr-5 ">
-                <p className="text-right font-bold text-xl text-gray-900 dark:text-slate-600">
+            <div className="lg:flex justify-center items-center">
+              <div className="lg:w-1/2 mr-5 ">
+                <p className="text-middle font-bold text-3xl text-gray-900 dark:text-slate-600">
                   Award-Winning
                 </p>
               </div>
-              <div className="w-1/2 pt-2 pb-2">
+              <div className="lg:w-1/2 pt-2 pb-2">
                 <p>
                   2016 대만  포르모사 국제 디아볼로 경연대회 금상 <br/>
                   2013 롯데백화점 마술대회 1위 <br/>
@@ -73,13 +73,13 @@ const Biography = () => {
               </div>
             </div>
 
-            <div className="flex justify-center items-center">
-              <div className="w-1/2 mr-5">
-                <p className="text-right font-bold text-xl text-gray-900 dark:text-slate-600">
+            <div className="lg:flex justify-center items-center">
+              <div className="lg:w-1/2 mr-5">
+                <p className="text-middle font-bold text-3xl text-gray-900 dark:text-slate-600">
                   BroadCast
                 </p>
               </div>
-              <div className="w-1/2 pt-2 pb-2">
+              <div className="lg:w-1/2 pt-2 pb-2">
                 <p>
                   2020 MBN 나야나 "서커스 디아볼로 아티스트" <br/>
                   2012 SBS 스타킹 "군대마술" <br/>
@@ -87,13 +87,13 @@ const Biography = () => {
               </div>
             </div>
 
-            <div className="flex justify-center items-center">
-              <div className="w-1/2 mr-5">
-                <p className="text-right font-bold text-xl text-gray-900 dark:text-slate-600">
+            <div className="lg:flex justify-center items-center">
+              <div className="lg:w-1/2 mr-5">
+                <p className="text-middle font-bold text-3xl text-gray-900 dark:text-slate-600">
                   Circus Art
                 </p>
               </div>
-              <div className="w-1/2 pt-2 pb-2">
+              <div className="lg:w-1/2 pt-2 pb-2">
                 <p>
                   Circus D Lab "날갯짓" <br/>
                   Circus D Lab "서커스올림픽" <br/>

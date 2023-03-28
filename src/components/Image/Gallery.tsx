@@ -12,37 +12,38 @@ import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
 
-import photos from "@/pages/shows/CircusOlympic/useCircusOlympicPhoto";
+// import photos from "@/pages/shows/CircusOlympic/useCircusOlympicPhoto";
 
 
-const slides = photos.map(({ src, width, height, images }) => ({
-    src,
-    width,
-    height,
-    srcSet: images.map((image) => ({
-        src: image.src,
-        width: image.width,
-        height: image.height,
-    })),
-}));
+// const slides = photos.map(({ src, width, height, images }) => ({
+//     src,
+//     width,
+//     height,
+//     srcSet: images.map((image) => ({
+//         src: image.src,
+//         width: image.width,
+//         height: image.height,
+//     })),
+// }));
 
 
 export default function Gallery() {
-    const [index, setIndex] = useState(-1);
-    console.log(photos);
+  return
+    // const [index, setIndex] = useState(-1);
+    // console.log(photos);
 
-    return (
-        <>
-            <PhotoAlbum photos={photos} layout="rows" targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
+    // return (
+    //     <>
+    //         <PhotoAlbum photos={photos} layout="rows" targetRowHeight={150} onClick={({ index }) => setIndex(index)} />
 
-            <Lightbox
-                slides={slides}
-                open={index >= 0}
-                index={index}
-                close={() => setIndex(-1)}
-                // enable optional lightbox plugins
-                plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
-            />
-        </>
-    );
+    //         <Lightbox
+    //             slides={slides}
+    //             open={index >= 0}
+    //             index={index}
+    //             close={() => setIndex(-1)}
+    //             // enable optional lightbox plugins
+    //             plugins={[Fullscreen, Slideshow, Thumbnails, Zoom]}
+    //         />
+    //     </>
+    // );
 }

@@ -1,8 +1,4 @@
-import React from 'react'
-import { useParams } from 'react-router-dom';
 
-import photos from './useCircusOlympicPhoto';
-import Gallery from '@/components/Image/Gallery';
 import CircusOlympicsGallery from './CircusOlymPicsGallery';
 
 

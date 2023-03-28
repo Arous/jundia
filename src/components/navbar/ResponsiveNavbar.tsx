@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 
+import Footer from "@/components/Footer/Footer";
+
 import useDarkMode from "@/features/darkmode/useDarkMode";
 import useDarkSide from "@/features/darkmode/useDarkSide";
 // import ToggleDarkButton from "@/features/darkmode/ToggleDarkButton";
@@ -283,6 +285,7 @@ function Nav() {
           {/* <!-- /End replace --> */}
           <MainRoutes />
         </div>
+        <Footer />
       </main>
     </div>
   );

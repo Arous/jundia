@@ -10,7 +10,7 @@ const Rainbow = () => {
   return (
     <div className='mt-20'>
 
-      <div className='flex'>
+      <div className='flex justify-center'>
 
         <div className='flex ml-5'>
           <div>

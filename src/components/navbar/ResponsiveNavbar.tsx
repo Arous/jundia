@@ -80,22 +80,6 @@ function Nav() {
                     PHOTO
                   </Link>
 
-                  <Link
-                    to="/test"
-                    // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Calendar
-                  </Link>
-
-                  <Link
-                    to="#"
-                    // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Reports
-                  </Link>
-
                   <div className="flex">
                     <Link
                       // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -215,22 +199,6 @@ function Nav() {
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   PHOTO
-                </Link>
-
-                <Link
-                  onClick={() => setIsOpen(false)}
-                  to="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Calendar
-                </Link>
-
-                <Link
-                  onClick={() => setIsOpen(false)}
-                  to="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
                 </Link>
 
                 <div className="flex justify-center mt-3">

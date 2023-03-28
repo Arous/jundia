@@ -10,7 +10,7 @@ const TimeLineCardData = [
     title: "2023 포카사 서커스 페스티벌 대만",
     counrtyCode: "TW",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/2020_forest3.jpg",
+    image: "/assets/images/show/2020_forest3.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -18,7 +18,7 @@ const TimeLineCardData = [
     title: "2023 플립사이드 페스티벌 싱가폴",
     counrtyCode: "SG",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/2022_busan_international1.jpg",
+    image: "/assets/images/show/2022_busan_international1.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -26,7 +26,7 @@ const TimeLineCardData = [
     title: "2019 유럽 저글링 컨벤션 오픈스테이지 영국",
     counrtyCode: "GB",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "//assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -34,7 +34,7 @@ const TimeLineCardData = [
     title: "2019 타이중 플라워 페스티벌 대만",
     counrtyCode: "TW",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -42,7 +42,7 @@ const TimeLineCardData = [
     title: "2018 쿠알라룸푸르 퍼블리카 스트릿 서커스 말레이시아",
     counrtyCode: "MY",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -50,7 +50,7 @@ const TimeLineCardData = [
     title: "2018 하노이 한국문화원 꿈달사 매직쇼 베트남",
     counrtyCode: "VN",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -58,7 +58,7 @@ const TimeLineCardData = [
     title: "2017 몬트리올 컴플리트먼트 서커스 페스티벌 캐나다",
     counrtyCode: "CN",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -66,7 +66,7 @@ const TimeLineCardData = [
     title: "2017 루블린 스트릿 페스티벌 폴란드",
     counrtyCode: "PL",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -74,7 +74,7 @@ const TimeLineCardData = [
     title: "2017 루블린 스트릿 페스티벌 폴란드",
     counrtyCode: "PL",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -82,7 +82,7 @@ const TimeLineCardData = [
     title: "2016 에든버러 페스티벌 프린지 영국",
     counrtyCode: "GB",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -90,7 +90,7 @@ const TimeLineCardData = [
     title: "2016 피라타레가 축제 스페인",
     counrtyCode: "ES",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -98,7 +98,7 @@ const TimeLineCardData = [
     title: "2016 취리히 씨어터 스펙타클 스위스",
     counrtyCode: "CN",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 
@@ -106,7 +106,7 @@ const TimeLineCardData = [
     title: "2016 피라타레가 축제 스페인",
     counrtyCode: "ES",
     time: "January 13th, 2023",
-    image: "/src/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
+    image: "/assets/images/show/BTS_ON_cover by JUNDIA.jpg",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
 ]
@@ -158,7 +158,7 @@ const TimeLine = () => {
             </time>
 
             <div className='flex flex-wrap'>
-              <img className='lg:w-1/2' src="/src/assets/images/show/2020_forest3.jpg" />
+              <img className='lg:w-1/2' src="/assets/images/show/2020_forest3.jpg" />
 
               <div className='basis-1/2 flex justify-center items-center'>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">

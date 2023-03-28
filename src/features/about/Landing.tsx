@@ -6,7 +6,7 @@ const Landing = () => {
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-        <img src="/src/assets/images/logo/jundia_bg_logo_white.jpg" />
+        <img src="/assets/images/logo/jundia_bg_logo_white.jpg" />
       
         <div className="py-12 md:py-20">
           <div className="text-center pb-12 md:pb-0">

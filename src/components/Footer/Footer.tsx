@@ -14,7 +14,7 @@ const Footer = () => {
 
                       <img
                         className="h-20 w-20"
-                        src="/src/assets/images/logo/jundia_logo_black.png"
+                        src="/assets/images/logo/jundia_logo_black.png"
                         alt=""
                       />
                       <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">

@@ -25,9 +25,11 @@ type Photo = {
   }[];
 }
 
+
 export default function CircusGallery() {
   const [index, setIndex] = useState(-1);
   const [photos, setPhotos] = useState<Photo[]>([]);
+
 
   useEffect(() => {
     const fetchImages = async () => {

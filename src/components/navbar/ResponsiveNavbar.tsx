@@ -42,14 +42,14 @@ function Nav() {
 
                 <img
                   className="h-12 w-12"
-                  src="/src/assets/images/logo/jundia_logo_white.png"
+                  src="/assets/images/logo/jundia_logo_white.png"
                   alt="Workflow"
                 />
 
                 {/* { theme === 'light' &&
                 <img
                   className="h-12 w-12"
-                  src="/src/assets/images/logo/jundia_logo_black.png"
+                  src="/assets/images/logo/jundia_logo_black.png"
                   alt="Workflow"
                 />
                 } */}

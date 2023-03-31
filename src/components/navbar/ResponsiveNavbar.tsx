@@ -12,6 +12,7 @@ import MainRoutes from "@/routes/MainRoutes";
 import InstagramIcon from "../icons/Instagram";
 import TikTokIcon from "../icons/TikTok";
 import YoutubeIcon from "../icons/Youtube";
+import {BsFacebook} from "react-icons/all";
 
 
 
@@ -91,6 +92,14 @@ function Nav() {
                   </Link>
 
                   <div className="flex">
+                    <Link
+                      // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      className="flex hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
+                      to="https://www.facebook.com/lee.joonsang.10?mibextid=LQQJ4d"
+                    >
+                      <BsFacebook />
+                    </Link>
+
                     <Link
                       // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                       className="flex hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -222,6 +231,14 @@ function Nav() {
 
                 <div className="flex justify-center mt-3">
                   <Link
+                    // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    to="https://www.facebook.com/lee.joonsang.10?mibextid=LQQJ4d"
+                  >
+                    <BsFacebook />
+                  </Link>
+
+                  <Link
                     className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     to="https://instagram.com/jundia_cirque?igshid=YmMyMTA2M2Y="
                   >
@@ -239,7 +256,7 @@ function Nav() {
 
                   <Link
                     className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    to="www.tiktok.com/@jundia_cirque"
+                    to="https://www.tiktok.com/@jundia_cirque"
                   >
                     {/* TIKTOK */}
                     <TikTokIcon />

@@ -31,9 +31,9 @@ const About = () => {
 
         <div className="flex justify-center ">
           <ImageWithText
-            src={"/assets/images/profiles/profile4.jpg"}
+            src={"/assets/images_compressed/profiles/profile4.jpg"}
             alt={"text"}
-            text={aboutText}
+            text={''}
             width={500}
             height={300}
           />
@@ -63,7 +63,7 @@ const About = () => {
         </div>
 
         <div className="flex justify-center">
-          <img src="/assets/images/profiles/profile3.jpg" width={500} height={300} />
+          <img src="/assets/images_compressed/profiles/profile3.jpg" width={500} height={300} />
         </div>
       </div>
 
@@ -72,7 +72,7 @@ const About = () => {
 
       <div className="mt-10 lg:flex justify-center items-center gap-5">
         <div className="flex justify-center">
-          <img src="/assets/images/profiles/profile5.jpg" width={500} height={300} />
+          <img src="/assets/images_compressed/profiles/profile5.jpg" width={500} height={300} />
         </div>
         <div className="mt-5">
           <h1>해외 공연</h1>

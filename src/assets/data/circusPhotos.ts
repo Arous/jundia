@@ -17,7 +17,8 @@ const imagesFileNames = [
   '41.jpg', '42.jpg', '43.jpg', '44.jpg', '45.jpg', '46.jpg',
 ]
 
-const imagePath = "/assets/images/show";
+// const imagePath = "/assets/images/show";
+const imagePath = "/assets/images_compressed/show";
 
 const images1 = imagesFileNames.map((fileName) => {
   return `${imagePath}/${fileName}`

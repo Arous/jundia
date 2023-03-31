@@ -21,7 +21,7 @@ const CircusClassic = () => {
             <br/>
 
             <span className='text-4xl'>
-              서커스 클래식 CIRCUS CLASSIC
+              서커스 클래식 CIRCUS CLASSICS
             </span>
             <span className="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
               25 min

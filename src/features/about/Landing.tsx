@@ -6,8 +6,18 @@ const Landing = () => {
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
-        <img src="/assets/images/logo/jundia_bg_logo_white.jpg" />
-      
+        {/*<img src="/assets/images_compressed/logo/jundia_bg_logo_white.jpg" />*/}
+        <div className="relative pt-[56.25%] mt-20">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src={'https://www.youtube.com/embed/a9fyx_mp75M?autoplay=1'}
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded youtube"
+          />
+        </div>
+
         <div className="py-12 md:py-20">
           <div className="text-center pb-12 md:pb-0">
             <h1

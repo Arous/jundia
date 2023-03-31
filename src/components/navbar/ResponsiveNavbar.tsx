@@ -40,11 +40,13 @@ function Nav() {
                   🎪 Jundia Circus
                 </div> */}
 
-                <img
-                  className="h-12 w-12"
-                  src="/assets/images/logo/jundia_logo_white.png"
-                  alt="Workflow"
-                />
+                <Link to ="/about">
+                  <img
+                    className="h-12 w-12"
+                    src="/assets/images_compressed/logo/jundia_logo_whtie.png"
+                    alt="Workflow"
+                  />
+                </Link>
 
                 {/* { theme === 'light' &&
                 <img
@@ -80,6 +82,14 @@ function Nav() {
                     PHOTO
                   </Link>
 
+                  <Link
+                    to="/contact"
+                    // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    CONTACT
+                  </Link>
+
                   <div className="flex">
                     <Link
                       // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
@@ -102,7 +112,7 @@ function Nav() {
                     <Link
                       // className="flex text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                       className=" hover:bg-gray-700 text-slate-800 dark:text-white px-3 py-2 rounded-md text-sm font-medium"
-                      to="www.tiktok.com/@jundia_cirque"
+                      to="https://www.tiktok.com/@jundia_cirque"
                     >
                       {/* TIKTOK */}
                       <TikTokIcon />
@@ -199,6 +209,15 @@ function Nav() {
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   PHOTO
+                </Link>
+
+                <Link
+                  onClick={() => setIsOpen(false)}
+                  to="/contact"
+                  // className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  CONTACT
                 </Link>
 
                 <div className="flex justify-center mt-3">

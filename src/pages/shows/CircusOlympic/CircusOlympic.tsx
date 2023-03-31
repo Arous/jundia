@@ -34,21 +34,21 @@ const CircusOlympic = () => {
 
             {/* <body className="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 min-h-screen flex items-center justify-center"> */}
             <h1 className="text-6xl md:text-8xl font-bold tracking-wider uppercase">
-                <span className="text-blue-500">O</span>
-                <span className="text-yellow-400">l</span>
-                <span className="text-black">y</span>
-                <span className="text-green-500">m</span>
-                <span className="text-red-500">p</span>
-                <span className="text-blue-500">i</span>
-                <span className="text-yellow-400">c</span>
-                <span className="text-blue-500">s</span>
-                <span className="text-gray-800"> </span> 
-                <span className="text-black">C</span>
-                <span className="text-green-500">i</span>
-                <span className="text-red-500">r</span>
-                <span className="text-blue-500">c</span>
-                <span className="text-yellow-400">u</span>
-                <span className="text-black">s</span>
+              <span className="text-black">C</span>
+              <span className="text-green-500">i</span>
+              <span className="text-red-500">r</span>
+              <span className="text-blue-500">c</span>
+              <span className="text-yellow-400">u</span>
+              <span className="text-black">s</span>
+              <span className="text-gray-800"> </span>
+              <span className="text-blue-500">O</span>
+              <span className="text-yellow-400">l</span>
+              <span className="text-black">y</span>
+              <span className="text-green-500">m</span>
+              <span className="text-red-500">p</span>
+              <span className="text-blue-500">i</span>
+              <span className="text-yellow-400">c</span>
+              <span className="text-blue-500">s</span>
             </h1>
             {/* </body> */}
 

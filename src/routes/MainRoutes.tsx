@@ -19,6 +19,7 @@ import "bootstrap/dist/js/bootstrap.min.js";
 import About from "@/pages/About";
 import Shows from "@/pages/Shows";
 import Photo from "@/pages/Photo";
+import Contact from "@/pages/Contact";
 
 import CircusOlympic from "@/pages/shows/CircusOlympic/CircusOlympic";
 import Butterfly from "@/pages/shows/Butterfly/Butterfly";
@@ -37,7 +38,8 @@ export function MainRoutes () {
           <Route path="about" element={<About />} />
           <Route path="photo" element={<Photo />} />
 
-          <Route path="shows" element={<Shows />}>
+          <Route path="shows" element={<Shows />} />
+          <Route path="contact" element={<Contact />} >
             {/* <Route path="butterfly" element={<Show />} /> */}
           </Route>
           <Route path="/shows/circus_olympics" element={<CircusOlympic />} />

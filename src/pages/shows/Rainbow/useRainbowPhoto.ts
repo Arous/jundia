@@ -10,7 +10,7 @@ const imagesFileNames = [
   '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '8.png', '9.png'
 ]
 
-const imagePath = "/assets/images/Circus/Show_Rainbow";
+const imagePath = "/assets/images_compressed/Circus/Show_Rainbow";
 
 const images1 = imagesFileNames.map((fileName) => {
   return `${imagePath}/${fileName}`

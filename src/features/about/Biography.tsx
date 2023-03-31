@@ -94,14 +94,16 @@ const Biography = () => {
                 </p>
               </div>
               <div className="lg:w-1/2 pt-2 pb-2">
-                <p>
-                  Circus D Lab "날갯짓" <br/>
-                  Circus D Lab "서커스올림픽" <br/>
-                  Circus D Lab "서커스 클래식" <br/>
-                  Dance Theater "LINE.줄" <br/>
-                  Focus "Juggling Omnibus" <br/>
-                  Performer Jun "Rainbow Show" <br/>
-                </p>
+                  준디아 &lt;디웨이브&gt; <br/>
+                  서커스디랩 &lt;원&gt; <br/>
+                  댄스씨어터창 &lt;굿 사도&gt; <br/>
+                  댄스씨어터창 &lt;라인.줄&gt; <br/>
+                  준디아  &lt;서커스클래식&gt; <br/>
+                  준디아 &lt;날갯짓&gt; <br/>
+                  서커스디랩 &lt;서커스올림픽&gt; <br/>
+                  준디아 &lt;레인보우쇼&gt; <br/>
+                  퍼포머준 &lt;케이팝매직쇼&gt; <br/>
+
               </div>
             </div>
           </div>

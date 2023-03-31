@@ -9,7 +9,7 @@ const Shows: React.FC = () => {
   const cards = [
     {
       id: "circus_olympics",
-      image: "/assets/images/Circus/Show_Olympic/1.jpg",
+      image: "/assets/images_compressed/Circus/Show_Olympic/1.jpg",
       title: "서커스올림픽 ",
       content: "CIRCUS OLYMPICS",
       hashtags: ["", ""],
@@ -17,7 +17,7 @@ const Shows: React.FC = () => {
 
     {
       id: "butterfly",
-      image: "/assets/images/Circus/Show_Butterfly/4.jpg",
+      image: "/assets/images_compressed/Circus/Show_Butterfly/4.jpg",
       title: "날갯짓 ",
       content: "THE FLUTTER OF WINGS",
       hashtags: ["#example", "#card2"],
@@ -25,7 +25,7 @@ const Shows: React.FC = () => {
 
     {
       id: "rainbow_show",
-      image: "/assets/images/Circus/Show_Rainbow/6.jpg",
+      image: "/assets/images_compressed/Circus/Show_Rainbow/6.jpg",
       title: "레인보우쇼 ",
       content: "RAINBOW SHOW",
       hashtags: ["#example", "#card3"],
@@ -33,15 +33,15 @@ const Shows: React.FC = () => {
 
     {
       id: "circus_classic",
-      image: "/assets/images/Circus/Show_Classic/3.jpg",
+      image: "/assets/images_compressed/Circus/Show_Classic/3.jpg",
       title: "서커스 클래식",
-      content: "CIRCUS CLASSIC",
+      content: "CIRCUS CLASSICS",
       hashtags: ["#example", "#card4"],
     },
 
     {
       id: "dwave",
-      image: "/assets/images/Circus/Show_Wave/1.jpg",
+      image: "/assets/images_compressed/Circus/Show_Wave/1.jpg",
       title: "디 웨이브",
       content: "D.WAVE",
       hashtags: ["#example", "#card4"],

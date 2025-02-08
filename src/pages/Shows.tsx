@@ -1,17 +1,23 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Routes, Route, Outlet } from "react-router-dom";
+import React from "react";
+import { Outlet } from "react-router-dom";
 
 // import { FaCommentAlt, FaThumbsUp, FaRegEye } from 'react-icons/fa'
-import Card from '@/components/Card/Card';
-
+import Card from "@/components/Card/Card";
 
 const Shows: React.FC = () => {
   const cards = [
     {
+      id: "rainbow_show",
+      image: "/assets/images_compressed/Circus/Show_Rainbow/6.jpg",
+      title: "레인보우쇼 ",
+      content: "RAINBOW SHOW",
+      hashtags: ["#example", "#card3"],
+    },
+    {
       id: "circus_olympics",
-      image: "/assets/images_compressed/Circus/Show_Olympic/1.jpg",
-      title: "서커스올림픽 ",
-      content: "CIRCUS OLYMPICS",
+      image: "/assets/v2025/circus_games/circus_games7.jpeg",
+      title: "서커스게임즈",
+      content: "CIRCUS GAMES",
       hashtags: ["", ""],
     },
 
@@ -22,15 +28,6 @@ const Shows: React.FC = () => {
       content: "THE FLUTTER OF WINGS",
       hashtags: ["#example", "#card2"],
     },
-
-    {
-      id: "rainbow_show",
-      image: "/assets/images_compressed/Circus/Show_Rainbow/6.jpg",
-      title: "레인보우쇼 ",
-      content: "RAINBOW SHOW",
-      hashtags: ["#example", "#card3"],
-    },
-
     {
       id: "circus_classic",
       image: "/assets/images_compressed/Circus/Show_Classic/3.jpg",
@@ -46,7 +43,6 @@ const Shows: React.FC = () => {
       content: "D.WAVE",
       hashtags: ["#example", "#card4"],
     },
-
   ];
 
   return (
@@ -67,7 +63,6 @@ const Shows: React.FC = () => {
       </div>
 
       <Outlet />
-
     </>
   );
 };

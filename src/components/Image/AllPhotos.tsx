@@ -13,7 +13,7 @@ import { loadCircusImages as allImages } from "@/assets/data/circusPhotos";
 import { loadAllImages as butterflyImages } from "@/pages/shows/Butterfly/useButterflyPhoto";
 import {
   breakpoints,
-  loadCircusImages,
+  loadAllImages,
 } from "@/pages/shows/CircusClassic/useCircusClassicPhoto";
 import { loadCircusImages as gamesImages } from "@/pages/shows/CircusOlympic/useCircusOlympicPhoto";
 import { loadAllImages as rainbowImages } from "@/pages/shows/Rainbow/useRainbowPhoto";
@@ -52,7 +52,7 @@ export default function AllPhotos() {
 
   const fetchImages = useCallback(async () => {
     const allImgs = await allImages();
-    const classicImages = await loadCircusImages();
+    const { classicA, classicB } = await loadAllImages();
     const { circus, butterfly } = await butterflyImages();
     const gamesImgs = await gamesImages();
     const { a, b } = await rainbowImages();
@@ -60,7 +60,8 @@ export default function AllPhotos() {
 
     const images = [
       ...allImgs,
-      ...classicImages,
+      ...classicA,
+      ...classicB,
       ...circus,
       ...butterfly,
       ...gamesImgs,

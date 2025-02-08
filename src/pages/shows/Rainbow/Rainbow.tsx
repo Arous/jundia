@@ -14,7 +14,7 @@ const Rainbow = () => {
           <span className="text-4xl">레인보우쇼</span>
           <span className="text-4xl">RAINBOW SHOW</span>
           <span className="h-1/2 bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
-            20 min
+            30 min
           </span>
         </div>
 
@@ -37,7 +37,7 @@ const Rainbow = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube.com/embed/keHkiIXslnQ"
+          src="https://youtube.com/embed/yp-GOERygHo?si=Hd-KRUCXwxfP_rWj"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         ></iframe>

@@ -1,33 +1,31 @@
-import React, { useEffect, useState, useCallback } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 import PhotoAlbum from "react-photo-album";
 import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/plugins/thumbnails.css";
-import { loadCircusImages, breakpoints } from "@/assets/data/circusPhotos";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
 
-// type Photo = {
-//   src: string;
-//   width: number;
-//   height: number;
-//   images: {
-//     src: string;
-//     width: number;
-//     height: number;
-//   }[];
-// };
+import { loadCircusImages as allImages } from "@/assets/data/circusPhotos";
+import { loadAllImages as butterflyImages } from "@/pages/shows/Butterfly/useButterflyPhoto";
+import {
+  breakpoints,
+  loadCircusImages,
+} from "@/pages/shows/CircusClassic/useCircusClassicPhoto";
+import { loadCircusImages as gamesImages } from "@/pages/shows/CircusOlympic/useCircusOlympicPhoto";
+import { loadAllImages as rainbowImages } from "@/pages/shows/Rainbow/useRainbowPhoto";
+import { loadCircusImages as waveImages } from "@/pages/shows/Wave/useWavePhoto";
 
 type ImageProp = {
   src: string;
   width: number;
   height: number;
-}
+};
 
-const LazyImage = React.memo(({ src, width, height, }: ImageProp) => {
+const LazyImage = React.memo(({ src, width, height }: ImageProp) => {
   const [loadedSrc, setLoadedSrc] = useState("");
 
   useEffect(() => {
@@ -39,7 +37,12 @@ const LazyImage = React.memo(({ src, width, height, }: ImageProp) => {
   }, [src]);
 
   return (
-    <img src={loadedSrc || "/placeholder-image.jpg"} width={width} height={height} alt={''} />
+    <img
+      src={loadedSrc || "/placeholder-image.jpg"}
+      width={width}
+      height={height}
+      alt={""}
+    />
   );
 });
 
@@ -48,7 +51,23 @@ export default function AllPhotos() {
   const [photos, setPhotos] = useState<ImageProp[]>([]);
 
   const fetchImages = useCallback(async () => {
-    const images = await loadCircusImages();
+    const allImgs = await allImages();
+    const classicImages = await loadCircusImages();
+    const { circus, butterfly } = await butterflyImages();
+    const gamesImgs = await gamesImages();
+    const { a, b } = await rainbowImages();
+    const waveImgs = await waveImages();
+
+    const images = [
+      ...allImgs,
+      ...classicImages,
+      ...circus,
+      ...butterfly,
+      ...gamesImgs,
+      ...a,
+      ...b,
+      ...waveImgs,
+    ];
 
     const formattedPhotos = images.map((photo) => {
       const width = breakpoints[1];
@@ -84,13 +103,6 @@ export default function AllPhotos() {
         layout="rows"
         targetRowHeight={150}
         onClick={({ index }) => setIndex(index)}
-        // renderPhoto={( {photo } ) => (
-        //   <LazyImage
-        //     src={photo.src}
-        //     width={photo.width}
-        //     height={photo.height}
-        //   />
-        // )}
       />
 
       <Lightbox

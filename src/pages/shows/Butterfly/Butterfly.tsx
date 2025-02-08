@@ -12,10 +12,13 @@ const Butterfly = () => {
 
             <br />
 
-            <span className="text-4xl">날갯짓 THE FLUTTER OF WINGS</span>
-            <span className="bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
-              20 min
-            </span>
+            <div className="flex flex-col sm:flex-row justify-center gap-2">
+              <span className="text-4xl">날갯짓</span>
+              <span className="text-4xl">THE FLUTTER OF WINGS</span>
+              <span className="h-1/2 bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
+                20 min
+              </span>
+            </div>
 
             <br />
 

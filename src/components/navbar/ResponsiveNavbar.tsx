@@ -1,26 +1,23 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import Footer from "@/components/Footer/Footer";
 
-import useDarkMode from "@/features/darkmode/useDarkMode";
 import useDarkSide from "@/features/darkmode/useDarkSide";
 // import ToggleDarkButton from "@/features/darkmode/ToggleDarkButton";
 import DarkLightButton from "@/features/darkmode/DarkLightButton";
 import MainRoutes from "@/routes/MainRoutes";
+import { BsFacebook } from "react-icons/all";
 import InstagramIcon from "../icons/Instagram";
 import TikTokIcon from "../icons/TikTok";
 import YoutubeIcon from "../icons/Youtube";
-import {BsFacebook} from "react-icons/all";
-
-
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   const toggleIsOpen = () => setIsOpen(!isOpen);
   // const { theme, toggleTheme } = useDarkMode();
-  const [ theme, toggleTheme ] = useDarkSide();
+  const [theme, toggleTheme] = useDarkSide();
 
   console.log(isOpen);
 
@@ -32,7 +29,8 @@ function Nav() {
           dark:bg-slate-700 
           fixed top-0 w-full z-50
           bg-opacity-70
-        ">
+        "
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
@@ -41,7 +39,7 @@ function Nav() {
                   🎪 Jundia Circus
                 </div> */}
 
-                <Link to ="/about">
+                <Link to="/about">
                   <img
                     className="h-12 w-12"
                     src="/assets/images_compressed/logo/jundia_logo_whtie.png"
@@ -56,7 +54,6 @@ function Nav() {
                   alt="Workflow"
                 />
                 } */}
-
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
@@ -126,14 +123,11 @@ function Nav() {
                       {/* TIKTOK */}
                       <TikTokIcon />
                     </Link>
-
                   </div>
 
                   <div className="flex flex-col items-center trainsition duration-200 ">
                     <DarkLightButton />
                   </div>
-
-
                 </div>
               </div>
             </div>
@@ -265,9 +259,7 @@ function Nav() {
                   <div className="flex flex-col items-center trainsition duration-200 px-3 py-1 ">
                     <DarkLightButton />
                   </div>
-
                 </div>
-
               </div>
             </div>
           )}

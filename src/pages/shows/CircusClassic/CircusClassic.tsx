@@ -14,7 +14,7 @@ const CircusClassic = () => {
           <span className="text-4xl">서커스 클래식</span>
           <span className="text-4xl">CIRCUS CLASSICS</span>
           <span className="h-1/2 bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
-            25 min
+            30 ~ 45min
           </span>
         </div>
 

@@ -29,7 +29,13 @@ const About = () => {
           />
         </div>
       </div>
+
       <img src="/assets/v2025/jundia_profile_all.jpg" />
+      <div className="flex flex-row w-1/2 pt-4">
+        <img src="/assets/v2025/jundia_profile6.jpeg" />
+        <img src="/assets/v2025/jundia_profile7.jpeg" />
+      </div>
+      <img src="/assets/v2025/jundia_profile8.jpeg" />
     </div>
   );
 };

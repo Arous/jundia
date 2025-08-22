@@ -60,25 +60,29 @@ export const breakpoints = [3840, 2400, 1080, 640, 384, 256, 128, 96, 64, 48];
 
 
 const IMAGE_PATHS = {
-    classicA: "/assets/images_compressed/Circus/Show_Classic",
-    classicB: "/assets/v2025/circus_classic",
+    // classicA: "/assets/images_compressed/Circus/Show_Classic",
+    // classicB: "/assets/v2025/circus_classic",
+    classicA: "/assets/202507/circus_classic/pic",
 };
 
 const FILENAMES = {
-    classicA: ['0.png', '1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.png'],
-    classicB: [
-        "circus_classic6.jpeg",
-        "circus_classic7.jpeg",
-        "circus_classic8.JPG",
-        "circus_classic12.jpeg",
-        "circus_classic13.jpeg",
-        "circus_classic14.jpeg",
-        "circus_classic15.jpeg",
-        "circus_classic16.jpeg",
-        "circus_classic17.jpeg",
-        "circus_classic18.jpeg",
-        "circus_classic19.jpeg",
-        "circus_classic20.JPG",
+    classicA: [
+        '1.jpg',
+        '2.jpg',
+        '3.jpg',
+        '4.jpg',
+        '5.jpg',
+        '6.jpg',
+        '7.jpg',
+        '8.jpg',
+        '9.jpg',
+        '10.jpg',
+        '11.jpg',
+        '12.jpg',
+        '13.jpg',
+        '14.png',
+        '15.jpg',
+        '16.jpg',
     ],
 };
 
@@ -116,9 +120,7 @@ const loadImages = (basePath: string, filenames: string[]): Promise<ImageInfo[]>
  */
 export const loadAllImages = (): Promise<{
     classicA: ImageInfo[];
-    classicB: ImageInfo[];
 }> =>
     Promise.all([
         loadImages(IMAGE_PATHS.classicA, FILENAMES.classicA),
-        loadImages(IMAGE_PATHS.classicB, FILENAMES.classicB),
-    ]).then(([classicA, classicB]) => ({ classicA, classicB }));
+    ]).then(([classicA]) => ({ classicA}));

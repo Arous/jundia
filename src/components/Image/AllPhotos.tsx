@@ -52,7 +52,7 @@ export default function AllPhotos() {
 
   const fetchImages = useCallback(async () => {
     const allImgs = await allImages();
-    const { classicA, classicB } = await loadAllImages();
+    const { classicA } = await loadAllImages();
     const { circus, butterfly } = await butterflyImages();
     const gamesImgs = await gamesImages();
     const { a, b } = await rainbowImages();
@@ -61,7 +61,6 @@ export default function AllPhotos() {
     const images = [
       ...allImgs,
       ...classicA,
-      ...classicB,
       ...circus,
       ...butterfly,
       ...gamesImgs,

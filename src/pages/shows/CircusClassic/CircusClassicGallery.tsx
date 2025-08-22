@@ -34,9 +34,9 @@ export default function Gallery() {
 
   useEffect(() => {
     const fetchImages = async () => {
-      const { classicA, classicB } = await loadAllImages();
+      const { classicA } = await loadAllImages();
 
-      const images = [...classicA, ...classicB];
+      const images = [...classicA];
       const formattedPhotos = images.map((photo) => {
         const width = breakpoints[1];
         const height = (photo.height / photo.width) * width;

@@ -11,7 +11,7 @@ const CircusOfRock = () => {
         <br />
 
         <div className="flex flex-col sm:flex-row justify-center gap-2">
-          <span className="text-4xl">서커스 오바 락</span>
+          <span className="text-4xl">서커스 오브 락</span>
           <span className="text-4xl">CIRCUS OF ROCK</span>
           <span className="h-1/2 bg-purple-100 text-purple-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded-full dark:bg-purple-900 dark:text-purple-300">
             30 min
@@ -27,9 +27,9 @@ const CircusOfRock = () => {
 
         <br />
         <span>
-          전설의 밴드 '대르곤 후르츠' <br />
-          바로 그 밴드의 리더 '가드레일 주니어'가 선보느는 이락스피릿 가득한
-          국내 최초 로큰롤 서커스! <br />
+          전설의 밴드 '드래곤 후르츠' <br />
+          바로 그 밴드의 리더 '가드레일 주니어'가 선보이는 락스피릿 가득한 국내
+          최초 로큰롤 서커스! <br />
           눈을 뗄 수 없는 에너지와 카리스마 가득한 그의 내한 콘서트에 여러분을
           초대합니다.
         </span>

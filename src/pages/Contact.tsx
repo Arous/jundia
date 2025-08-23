@@ -1,30 +1,24 @@
-import React, {Component} from 'react';
-
-import { MdEmail, MdPhone } from 'react-icons/md/';
-import { FaInstagramSquare } from 'react-icons/fa/'
-
+import { FaInstagramSquare } from "react-icons/fa/";
+import { MdEmail, MdPhone } from "react-icons/md/";
 
 const Contact = () => {
   return (
     <>
       <img
-        src="/assets/images_compressed/Circus/Show_Olympic/5.jpg"
+        // src="/assets/images_compressed/Circus/Show_Olympic/5.jpg"
+        src="/assets/202507/contact/profile.jpg"
         alt="contact"
         className="w-full h-full mt-10"
       />
 
       <div>
-        <div className="text-4xl m-10">
-          Contact
-        </div>
+        <div className="text-4xl m-10">Contact</div>
 
         <div className="flex justify-center items-center gap-2 m-2">
           <div className="">
             <MdEmail />
           </div>
-          <div className="">
-            jun8915@naver.com
-          </div>
+          <div className="">jun8915@naver.com</div>
         </div>
 
         <div className="flex justify-center items-center gap-2 m-2">
@@ -32,11 +26,11 @@ const Contact = () => {
         </div>
 
         <div className="flex justify-center items-center gap-2 m-2">
-          < FaInstagramSquare /> @jundia_cirque
+          <FaInstagramSquare /> @jundia_cirque
         </div>
       </div>
     </>
   );
-}
+};
 
 export default Contact;

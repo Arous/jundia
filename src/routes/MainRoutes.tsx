@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 
 import "@/App.css";
 //import RouterLinks from './Component/RouterLinks';
@@ -17,18 +16,18 @@ import "bootstrap/dist/js/bootstrap.min.js";
 //import gird from './@material-ui/core/gird'
 
 import About from "@/pages/About";
-import Shows from "@/pages/Shows";
-import Photo from "@/pages/Photo";
 import Contact from "@/pages/Contact";
+import Photo from "@/pages/Photo";
+import Shows from "@/pages/Shows";
 
-import CircusOlympic from "@/pages/shows/CircusOlympic/CircusOlympic";
 import Butterfly from "@/pages/shows/Butterfly/Butterfly";
-import Wave from "@/pages/shows/Wave/Wave";
-import Rainbow from "@/pages/shows/Rainbow/Rainbow";
 import CircusClassic from "@/pages/shows/CircusClassic/CircusClassic";
-import Show from "@/components/Show/Show";
+import CircusOfRock from "@/pages/shows/CircusOfRock/CircusOfRock";
+import CircusOlympic from "@/pages/shows/CircusOlympic/CircusOlympic";
+import Rainbow from "@/pages/shows/Rainbow/Rainbow";
+import Wave from "@/pages/shows/Wave/Wave";
 
-export function MainRoutes () {
+export function MainRoutes() {
   return (
     <div className="container-fuild">
       <div className="container-fuild">
@@ -39,7 +38,7 @@ export function MainRoutes () {
           <Route path="photo" element={<Photo />} />
 
           <Route path="shows" element={<Shows />} />
-          <Route path="contact" element={<Contact />} >
+          <Route path="contact" element={<Contact />}>
             {/* <Route path="butterfly" element={<Show />} /> */}
           </Route>
           <Route path="/shows/circus_olympics" element={<CircusOlympic />} />
@@ -47,6 +46,7 @@ export function MainRoutes () {
           <Route path="/shows/dwave" element={<Wave />} />
           <Route path="/shows/rainbow_show" element={<Rainbow />} />
           <Route path="/shows/circus_classic" element={<CircusClassic />} />
+          <Route path="/shows/circus_of_rock" element={<CircusOfRock />} />
 
           {/* <Route path="/test" element={<CircusOlympic />} /> */}
         </Routes>
@@ -55,4 +55,4 @@ export function MainRoutes () {
   );
 }
 
-export default MainRoutes ;
+export default MainRoutes;

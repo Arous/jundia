@@ -10,10 +10,11 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import "yet-another-react-lightbox/styles.css";
 
 import { loadCircusImages as allImages } from "@/assets/data/circusPhotos";
+import { loadAllPhotos2507 } from "@/assets/data/photos2507";
 import { loadAllImages as butterflyImages } from "@/pages/shows/Butterfly/useButterflyPhoto";
 import {
   breakpoints,
-  loadCircusImages,
+  loadAllImages,
 } from "@/pages/shows/CircusClassic/useCircusClassicPhoto";
 import { loadCircusImages as gamesImages } from "@/pages/shows/CircusOlympic/useCircusOlympicPhoto";
 import { loadAllImages as rainbowImages } from "@/pages/shows/Rainbow/useRainbowPhoto";
@@ -52,7 +53,8 @@ export default function AllPhotos() {
 
   const fetchImages = useCallback(async () => {
     const allImgs = await allImages();
-    const classicImages = await loadCircusImages();
+    const allPhotos2507 = await loadAllPhotos2507();
+    const { classicA } = await loadAllImages();
     const { circus, butterfly } = await butterflyImages();
     const gamesImgs = await gamesImages();
     const { a, b } = await rainbowImages();
@@ -60,7 +62,8 @@ export default function AllPhotos() {
 
     const images = [
       ...allImgs,
-      ...classicImages,
+      ...allPhotos2507,
+      ...classicA,
       ...circus,
       ...butterfly,
       ...gamesImgs,

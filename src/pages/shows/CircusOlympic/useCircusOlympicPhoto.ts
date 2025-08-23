@@ -17,6 +17,18 @@ const imagesFileNames = [
     'circus_games9.jpeg',
     'circus_games10.jpeg',
     'circus_games11.jpeg',
+    '20241221_CircusPlays_530.jpg',
+    '20241221_CircusPlays_457.jpg',
+    '20241221_CircusPlays_598.jpg',
+    '20241221_CircusPlays_464.jpg',
+    '20241221_CircusPlays_501.jpg',
+    'IMG_2254.JPG',
+    'IMG_1954.JPG',
+    'IMG_2244.jpg',
+    'IMG_2260.jpg',
+    'IMG_1959.JPG',
+    'IMG_1958.JPG',
+    'IMG_1906.jpg',
 ]
 
 const imagePath = "/assets/v2025/circus_games";

@@ -43,6 +43,14 @@ const Shows: React.FC = () => {
       content: "D.WAVE",
       hashtags: ["#example", "#card4"],
     },
+
+    {
+      id: "circus_of_rock",
+      image: "/assets/202507/circus_of_rock/main.jpg",
+      title: "서커스 오브 락",
+      content: "Circus of Rock",
+      hashtags: ["#example", "#card5"],
+    },
   ];
 
   return (

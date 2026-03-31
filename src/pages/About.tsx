@@ -19,18 +19,14 @@ const About = () => {
         <div className="relative pt-[56.25%] mt-8 sm:mt-20">
           <iframe
             className="absolute top-0 left-0 w-full h-full"
-            src={
-              "https://www.youtube.com/embed/XTYPIuYBxcE?si=WuLzDHTkZYt_8qhe"
-            }
+            src="https://www.youtube.com/embed/foNi9uYF1ic"
             frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
-            title="Embedded youtube"
-          />
+          ></iframe>
         </div>
       </div>
 
-      <img src="/assets/v2025/jundia_profile_all.jpg" />
+      <img src="/assets/v2026/profile2603.jpeg" />
       <div className="flex flex-row w-1/2 pt-4">
         <img src="/assets/v2025/jundia_profile6.jpeg" />
         <img src="/assets/v2025/jundia_profile7.jpeg" />
